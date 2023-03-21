@@ -1,7 +1,18 @@
-﻿@{
+﻿@model IEnumerable<PhamHoangNam_2080600040.Models.Course>
+
+@{
     ViewBag.Title = "Home Page";
 }
-
+<div class="row">
+    <ul>
+        @foreach (var course in Model)
+        {
+            <li>
+              @course.DateTime - @course.Category.Name
+            </li>
+        }
+    </ul>
+</div>
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
         <h1 id="title">ASP.NET</h1>

@@ -11,6 +11,8 @@ namespace PhamHoangNam_2080600040.Models
         public int Id { get; set; }
         public ApplicationUser Lecturer { get; set; }
         [Required]
+        public string LeturerId { get; set; }
+        [Required]
         [StringLength(255)]
         public string Place { get; set; }
         public DateTime DateTime { get; set; }

@@ -1,4 +1,21 @@
-﻿/* Set padding to keep content from hitting the edges */
+﻿
+
+
+/* Set padding to keep content from hitting the edges */
+.navbar-inverse {
+    background-color : greenyellow;
+    border-color:white;
+}
+.navbar-inverse .navbar-nav > li > a
+{
+    color:black;
+}
+.navbar-inverse .navbar-brand
+{
+    color:black;
+}
+
+
 .body-content {
     margin-top: 15px;
     padding-left: 15px;
@@ -8,6 +25,7 @@
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+  
 .dl-horizontal dt {
     white-space: normal;
 }
